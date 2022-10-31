@@ -1,0 +1,15 @@
+.hero-section{
+    padding: 0rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.hero-sides{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.hero-title>span, .sub-title{
+    width: min-content;
+}
+.blue-img{
+    background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
+}
