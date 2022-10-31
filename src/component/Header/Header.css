@@ -1,0 +1,9 @@
+ul>li:hover{
+    color: #fe956f;
+}
+.logo{
+    flex: 1;
+}
+.search{
+    height: 2.5rem;
+}
