@@ -10,41 +10,34 @@ import { SliderProducts } from "../../data/products";
 
 const Slider = () => {
   return (
-    <div className="slider relative">
+    <div className="slider-container relative">
       <Swiper
-
-      modules={[Pagination, Navigation]}
-      navigation={true}
-      loopFillGroupWithBlank={true}
-      sidesperview={3}
-spaceBetween={40}
-slidesPerGroup={1}
-loop={true}
-className="unset w-[70%] h-[12rem]"
+        modules={[Pagination, Navigation]}
+        navigation={true}
+        loopFillGroupWithBlank={true}
+        slidesPerView={3}
+        spaceBetween={40}
+        slidesPerGroup={1}
+        loop={true}
+        className=" myswiper  w-[70%] h-[10rem]"
       >
-        {SliderProducts.map((slide,i)=>(
-      
-          
-            <SwiperSlide className="bg-white  flex p-[1rem] rounded overflow-hidden relative box-border">
-        
-        
-              <div className="left-side">
-              <div className="title">
-<span>{slide.name}</span>
-<span>{slide.detail}</span>
+        {SliderProducts.map((slide, i) => (
+          <SwiperSlide className="bg-white  flex p-[1rem] rounded-xl overflow-hidden relative box-border">
+            <div className="left-side flex flex-col justify-between">
+              <div className="title flex flex-col">
+                <span className='text-[1.4rem] font-[600]'>{slide.name}</span>
+                <span className='text-[0.7rem]'>{slide.detail}</span>
               </div>
-<span>{slide.price}</span>
-<div>shop now</div>
-              </div>
+              <span className="text-[2rem] font-[600]">{slide.price}$</span>
+              <div className="btn text-[0.6rem] border border-solid border-[#343434]  rounded-2xl ">shop now</div>
+            </div>
 
-              <img src={slide.img} alt="" />
-            </SwiperSlide>
-       ))} 
+            <img src={slide.img} alt="" className="absolute right-0 w-[40%] h-full -bottom-[20%] -rotate-[20deg]"/>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
-    
   );
-
 };
 //console.log(SliderProducts)
 export default Slider;
