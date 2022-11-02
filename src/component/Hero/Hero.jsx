@@ -21,12 +21,15 @@ const Hero = () => {
       <div className="middle-side flex items-baseline justify-center relative">
         <div className="blue-img w-[30rem] h-[30rem] absolute -z-[99] rounded-full bottom-0"></div>
         <img src={heroImg} alt="" width={600} className="w-[30rem] absolute bottom-0" />
-        <div className="cart absolute bottom-[25%] leftflex gap-[1rem]">
-          <RiShoppingBagFill className="w-[40px] h-[40px] bg-white rounded-full p-[10px]"/>
-          <div className="sigup">
-            <span>Best signup offers</span>
+        <div className="cart absolute bottom-[23%] right-[4%] flex gap-[1rem]">
             <div>
-              <BsArrowRight />
+            <RiShoppingBagFill className="w-[60px] h-[60px] bg-white   border-[6px] border-gray-800 border-solid rounded-full p-[10px]"/>
+            </div>
+      
+          <div className="signup bg-white rounded-2xl w-full h-[3.5rem] flex items-center justify-center gap-9 p-3">
+            <span className="text-[12px]">Best signup <br /> offers</span>
+            <div  className="bg-white rounded-full border border-solid border-[#6dd3fe] p-2 flex items-center">
+              <BsArrowRight className="arrow w-[10px] h-[10px] " />
             </div>
           </div>
         </div>
