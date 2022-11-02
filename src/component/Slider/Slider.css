@@ -1,0 +1,6 @@
+.slider .swiper-button-next{
+    right:0
+}
+.swiper-button-prev{
+left: -2rem;
+}
