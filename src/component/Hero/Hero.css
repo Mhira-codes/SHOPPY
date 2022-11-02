@@ -13,3 +13,6 @@
 .blue-img{
     background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
 }
+.signup{
+    box-shadow:var(--shadow1);
+}
