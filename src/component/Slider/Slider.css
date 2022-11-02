@@ -1,6 +1,16 @@
-.slider .swiper-button-next{
-    right:0
+.slider-container .myswiper{
+    position: unset;
 }
-.swiper-button-prev{
-left: -2rem;
+.slider-container .swiper-button-next{
+    right:6rem;
+    color: var(--black);
+
+}
+.slider-container .swiper-button-prev{
+left: 6rem;
+color: var(--black);
+}
+.btn {
+    width: max-content;
+    padding: 5px 10px;
 }
