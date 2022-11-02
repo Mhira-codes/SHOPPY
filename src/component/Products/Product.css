@@ -1,0 +1,12 @@
+.product-wrapper{
+display: grid;
+grid-template-columns: 25% auto;
+}
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    height: 25rem;
+    overflow-y: scroll;
+    grid-gap: 1rem;
+
+}
