@@ -2,9 +2,16 @@ import React from "react";
 import "./Product.css";
 import headerImg from "../.././assets/plane.png";
 import { ProductsData } from "../../data/products";
-import { useState } from "react";
+import { useState,  } from "react";
 const Product = () => {
   const [productItems, setProductItems] = useState(ProductsData);
+
+  const filterItem =(type)=>{
+    setProductItems(ProductsData.filter((item)=>(
+      item.type === type
+    )
+    ))
+  }
   return (
     <div className="flex flex-col gap-8 items-center    pb-[2rem] pl-[2rem] relative">
       <div className="product header flex flex-col justify-start  items-start ">
@@ -20,16 +27,15 @@ const Product = () => {
 
       <div className="product-wrapper w-[90%]">
         <ul className="text-[1.3rem] flex flex-col gap-8 font-[500] cursor-pointer">
-          <li>All</li>
-          <li>Skin Care </li>
-          <li>Conditioners</li>
-          <li>Foundation</li>
+          <li onClick={()=> setProductItems(ProductsData)}>All</li>
+          <li onClick={()=>filterItem("skin care")}>Skin Care </li>
+          <li onClick={()=>filterItem("conditioner")}>Conditioners</li>
+          <li onClick={()=>filterItem("foundation")}>Foundation</li>
         </ul>
 
-        <div className="product-list">
+        <div className="product-list" >
           {productItems.map((item, i) => (
-            <div className="product w-[12rem] h-[9rem] bg-white relative overflow-hidden  rounded-2xl flex gap-[1rem]
-             p-[1rem]">
+            <div className="product w-[13rem] h-[9rem]  bg-white relative overflow-hidden  rounded-2xl flex gap-[1rem] p-[1rem]">
               <div className="left-side flex flex-col justify-between">
                 <div className="title flex flex-col">
                   <span className="text-[1.2rem] font-[600]">{item.name}</span>
@@ -40,7 +46,8 @@ const Product = () => {
                   shop now
                 </div>
               </div>
-              <img src={item.img} alt="" className="w-[6rem] h-[11rem]  -rotate-[20deg] right-0 "/>
+           
+              <img src={item.img} alt="" className=" absolute w-[5rem] h-full right-0 -rotate-[20deg] -bottom-[20%]  "/>
             </div>
           ))}
         </div>
