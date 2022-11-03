@@ -1,0 +1,10 @@
+.testimonial{
+    position: unset;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: var(--black);
+ 
+}
+.name{
+color: #7c7272;
+}
