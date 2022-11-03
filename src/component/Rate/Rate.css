@@ -1,0 +1,9 @@
+.rate{
+    padding:4rem 4rem 0px 2rem;
+}
+.rate-wrapper{
+
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: flex-end;
+ 
+}
