@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@formkit/auto-animate": "^1.0.0-beta.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^7.6.4",
     "react": "^18.2.0",
     "react-compare-image": "^3.1.0",
     "react-dom": "^18.2.0",
