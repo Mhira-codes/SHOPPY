@@ -16,3 +16,30 @@
 .signup{
     box-shadow:var(--shadow1);
 }
+
+@media screen and (max-width:856px){
+    .hero-title>span, .sub-title>p,.traffic>p,.customers>p{
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+    .sub-title>span,.traffic>span,.customers>span{
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    .middle-side>.blue-img{
+        position: absolute;
+        bottom: 0;
+        width: 20rem;
+        height: 80%;
+        border-radius: 100%;
+    }
+    .middle-side>img{
+        position:absolute;
+        bottom: 0;
+        width: 30rem;
+        height: 50%;
+    }
+    /* .hero-section{
+        grid-template-areas: ;
+    } */
+}
