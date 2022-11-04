@@ -12,6 +12,7 @@ ul>li:hover{
         background-color: white;
         position: absolute;
         z-index: 9999;
+        top:1rem;
         right: 2rem;
         display: flex;
         flex-direction: column;
@@ -23,10 +24,20 @@ ul>li:hover{
     .nav-list>ul{
         display: flex;
         flex-direction: column;
-        margin-left: -2rem;
-        display: none;
+        justify-content:start;
+        align-items:flex-start;
+       display: none;
+      
+ 
     }
-    /* .input{
-       
-    } */
+    .hambuger{
+        display: block;
+    }
+    
+    .nav-list>ul>li{
+        padding-top: 1rem;
+    }
+    .input{
+       display:none;
+    }
 }
