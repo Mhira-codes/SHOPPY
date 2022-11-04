@@ -51,11 +51,11 @@ const Hero = () => {
       </div>
       {/* right-hand */}
       <div className="hero-sides flex flex-col text-right">
-<div className="flex flex-col text-right">
+<div className="traffic flex flex-col text-right">
     <span className="font-bold  text-[2.5rem]">1.5m</span>
     <p className="text-right">Monthly Traffic </p>
 </div>
-<div  className="flex flex-col text-right">
+<div  className=" customers flex flex-col text-right">
     <span className="font-bold  text-[2.5rem]">100k</span>
     <p className="text-right">Happy Customers </p>
 </div>
