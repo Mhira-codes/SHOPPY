@@ -1,0 +1,31 @@
+@media screen  and (max-width:856px){
+    .footer-details{
+        display: flex;
+        gap: 1rem;
+    }
+    .fItems{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen  and (max-width:640px){
+    .footer-details{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .secondpart,.third-part, .fourth-part{
+        display: flex;
+        flex-direction:column;
+        justify-items: flex-start;
+        align-items: flex-start;
+    }
+    .fItems{
+        display: flex;
+        flex-direction: row;
+    
+    }
+}
