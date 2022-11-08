@@ -6,7 +6,7 @@ const Rate = () => {
     <div className="rate  flex justify-center items-center flex-col">
       <div className="rate-wrapper grid  w-full">
         {/* left */}
-        <div className="flex flex-col text-left gap-3">
+        <div className="left flex flex-col text-left gap-3">
           <span className="text-3xl uppercase font-bold">Top rated</span>
           <p className="text-[0.9rem]">
             SEEDILY SAY HAS SUITABLE DISPOSAL AND BOY. EXERCISE JOY MAN CHILDREN
@@ -22,7 +22,7 @@ const Rate = () => {
       
 
         {/* rigt-side */}
-        <div className="flex flex-col text-right gap-3">
+        <div className=" right flex flex-col text-right gap-3">
           <span className="text-3xl uppercase font-bold">100k</span>
           <span className="text-[0.9rem] uppercase">Happy customers with us</span>
         </div>
