@@ -1,0 +1,13 @@
+@media screen  and (max-width:856px){
+    .virtual-class{
+        display: flex ;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2rem 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+}
