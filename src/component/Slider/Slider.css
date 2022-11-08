@@ -14,3 +14,14 @@ color: var(--black);
     width: max-content;
     padding: 5px 10px;
 }
+
+@media screen  and (max-width:856px){
+    .myswiper{
+ width: 90%;
+ height: 10rem;
+    }
+    .slider-container .swiper-button-prev,
+    .slider-container .swiper-button-next{
+        display: none;
+    }  
+}
