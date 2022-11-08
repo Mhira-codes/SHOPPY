@@ -7,3 +7,21 @@
     align-items: flex-end;
  
 }
+@media screen and (max-width:856px){
+    .rate-wrapper{
+        display: grid;
+        grid-gap: 1rem;
+    }
+}
+@media screen and (max-width:640px) {
+ .rate-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .left, .right{
+    text-align: center;
+ }
+}
