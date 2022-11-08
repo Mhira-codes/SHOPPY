@@ -26,7 +26,7 @@ const Product = () => {
       </div>
 
       <div className="product-wrapper w-[90%]">
-        <ul className="text-[1.3rem] flex flex-col gap-8 font-[500] cursor-pointer">
+        <ul className=" product-item text-[1.3rem] flex flex-col gap-8 font-[500] cursor-pointer">
           <li onClick={()=> setProductItems(ProductsData)}>All</li>
           <li onClick={()=>filterItem("skin care")}>Skin Care </li>
           <li onClick={()=>filterItem("conditioner")}>Conditioners</li>
@@ -42,7 +42,7 @@ const Product = () => {
                   <span className="text-[0.7rem]">{item.detail}</span>
                 </div>
                 <span className="text-[1.5rem] font-[600]">{item.price}$</span>
-                <div className="btn text-[0.6rem] border border-solid border-[#343434]  rounded-2xl ">
+                <div className="btn text-[0.6rem] border border-solid border- [#343434]  rounded-2xl ">
                   shop now
                 </div>
               </div>
