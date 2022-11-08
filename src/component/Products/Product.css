@@ -11,3 +11,15 @@ grid-template-columns: 25% auto;
     grid-gap: 2rem;
 
 }
+@media screen and (max-width:856px) {
+    .product-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+.product-item{
+        display:flex;
+        flex-direction:row;
+    }
+}
