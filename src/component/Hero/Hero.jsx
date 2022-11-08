@@ -50,7 +50,11 @@ const Hero = () => {
         </motion.div>
       </div>
       {/* right-hand */}
-      <div className="hero-sides flex flex-col text-right">
+      <div className=" hero-sides hero-right flex flex-col text-right" 
+
+      >
+
+        
 <div className="traffic flex flex-col text-right">
     <span className="font-bold  text-[2.5rem]">1.5m</span>
     <p className="text-right">Monthly Traffic </p>
