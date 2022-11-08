@@ -16,6 +16,14 @@ const Testimonial = () => {
       spaceBetween={20}
       loop={true}
       loopFillGroupWithBlank={1}
+
+      breakpoints={{
+        856:{slidesPerView:3},
+        640:{slidesPerView:2},
+        0:{slidesPerView:1}
+      }
+
+      }
    className=' testimonial p-[1rem]'
      >
         
