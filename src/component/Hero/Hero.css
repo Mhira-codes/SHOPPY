@@ -29,17 +29,43 @@
     .middle-side>.blue-img{
         position: absolute;
         bottom: 0;
-        width: 20rem;
-        height: 80%;
+        width: 22rem;
+        height: 22rem;
         border-radius: 100%;
     }
     .middle-side>img{
         position:absolute;
         bottom: 0;
-        width: 30rem;
-        height: 50%;
+        width: 20rem;
+        height: 20rem;
     }
-    /* .hero-section{
-        grid-template-areas: ;
-    } */
+    .hero-section{
+        grid-template-areas:
+        "left center center"
+        "right right right" ;
+    }
+    .hero-section>:first-child{
+        grid-area: left;
+
+    }
+    .hero-section>:nth-child(2){
+        grid-area: center;
+    }
+    .hero-section>:nth-child(3){
+        grid-area: right;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        margin: 2rem 0;
+      
+    
+    }
+   
+.cart{
+    position: absolute;
+bottom:10%
 }
+   
+  
+}
+
