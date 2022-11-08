@@ -1,7 +1,7 @@
 .testimonial{
     position: unset;
 }
-.swiper-button-next, .swiper-button-prev{
+.testimonial .swiper-button-next,.testimonial .swiper-button-prev{
     color: var(--black);
  
 }
