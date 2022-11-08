@@ -6,7 +6,7 @@ import Before from "../../assets/before.png"
 import After from "../../assets/after.png"
 const VIrtual = () => {
   return (
-    <div className="my-[6rem] p-[2rem] flex justify-around">
+    <div className="virtual-class my-[6rem] p-[2rem] flex justify-around">
       {/* left-side */}
       <div className="left-virtual flex flex-col gap-8 relative ">
         <span className="text-[2rem] font-bold  uppercase">Virtual Try-on</span>
