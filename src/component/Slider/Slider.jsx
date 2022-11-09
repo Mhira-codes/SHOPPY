@@ -19,10 +19,21 @@ const Slider = () => {
         spaceBetween={40}
         slidesPerGroup={1}
         loop={true}
+        autoplay={false}
         breakpoints={{
-          856:{slidesPerView:3},
-          640:{slidesPerView:2},
-          0:{slidesPerView:1}
+          856:{
+      
+            slidesPerView:3
+          },
+
+          640:{
+           
+            slidesPerView:2
+          },
+          0:{
+           
+            slidesPerView:1
+          }
         }}
         className=" myswiper  w-[70%] h-[10rem]"
       >
