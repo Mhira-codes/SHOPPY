@@ -55,6 +55,7 @@
         grid-area: right;
         display: grid;
         grid-template-columns: auto auto;
+        
         justify-content: space-around;
         margin: 2rem 0;
       
