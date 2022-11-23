@@ -6,9 +6,9 @@ import { useState,  } from "react";
 const Product = () => {
   const [productItems, setProductItems] = useState(ProductsData);
 
-  const filterItem =(type)=>{
+  const filterItem =(productType)=>{
     setProductItems(ProductsData.filter((item)=>(
-      item.type === type
+      item.type === productType
     )
     ))
   }
